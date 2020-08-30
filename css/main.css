@@ -2010,7 +2010,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   color: #FFFFFF;
 }
 #services .section-intro .lead {
-  color: rgba(242, 242, 242, 0.4);
+  color: rgba(242, 242, 242, 0.8);
 }
 #services .services-content {
   text-align: center;

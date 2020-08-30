@@ -1532,6 +1532,80 @@ header .header-logo a {
   background-color: #19191b;
 }
 
+#home .play-btn {
+  width: 94px;
+  height: 94px;
+  background: radial-gradient(#f9a828 50%, rgba(101, 111, 150, 0.15) 52%);
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+#home .play-btn::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-40%) translateY(-50%);
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+#home .play-btn:before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation: pulsate-btn 2s;
+  animation: pulsate-btn 2s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 2px solid rgba(163, 163, 163, 0.4);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+
+#home .play-btn:hover::after {
+  border-left: 15px solid #f9a828;
+  -webkit-transform: scale(20);
+  transform: scale(20);
+}
+
+#home .play-btn:hover::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-40%) translateY(-50%);
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  -webkit-animation: none;
+  animation: none;
+  border-radius: 0;
+}
+
 .home-content-table {
   width: 100%;
   height: 100%;
@@ -1562,6 +1636,13 @@ header .header-logo a {
 .home-content-tablecell h1 {
   font-family: "Open Sans","Raleway", Microsoft JhengHei, sans-serif,"montserrat-bold", serif;
   font-size: 9rem;
+  font-weight: 600;
+  line-height: 1.133;
+  color: #FFFFFF;
+}
+.home-content-tablecell h2 {
+  font-family: "Open Sans","Raleway", Microsoft JhengHei, sans-serif,"montserrat-bold", serif;
+  font-size: 5rem;
   font-weight: 600;
   line-height: 1.133;
   color: #FFFFFF;

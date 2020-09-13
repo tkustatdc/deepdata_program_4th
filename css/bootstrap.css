@@ -707,6 +707,12 @@ pre code {
   max-width: 100%;
 }
 
+.col-13 {
+  -ms-flex: 0 0 200%;
+  flex: 0 0 200%;
+  max-width: 200%;
+}
+
 .order-first {
   -ms-flex-order: -1;
   order: -1;
@@ -9020,4 +9026,6 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
+
+
 /*# sourceMappingURL=bootstrap.css.map */

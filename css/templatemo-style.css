@@ -11,7 +11,7 @@ http://www.templatemo.com/tm-521-get-ready
   body {
     margin: 0;
     /*-webkit-perspective: 1000;*/
-    font-family: Microsoft JhengHei, sans-serif;
+    font-family:  Microsoft JhengHei, sans-serif;
     background: #303030;
   }
 
@@ -42,7 +42,7 @@ http://www.templatemo.com/tm-521-get-ready
   }
 
   p {
-    color: #757575;
+    color: #e7ded1;
     font-size: 14px;
     font-weight: normal;
     line-height: 24px;
@@ -292,11 +292,10 @@ http://www.templatemo.com/tm-521-get-ready
       font-size: 12px;
     }
   }
-
-
- .Admission{
-  color:#d4afaf;
-  font-size: 20px;
-  line-height:35px;
-
-}
+  .Admission{
+    color:#d4afaf;
+    font-size: 20px;
+    line-height:35px;
+  
+  }
+  
